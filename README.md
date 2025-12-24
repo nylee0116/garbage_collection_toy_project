@@ -2,8 +2,8 @@
 숙명여자대학교 2025-2 학습공동체 Py-C Bridge팀의 Garbage Collection Toy Project repository입니다.
 ---
 ## 1. 프로젝트 개요
-이 프로젝트는 숙명여자대학교 2025-2 학습공동체 최종 결과물인 Toy Project입니다.
-<Uniprocessor Garbage Collection Techniques> 논문을 참고하였습니다.
+이 프로젝트는 숙명여자대학교 2025-2 학습공동체 최종 결과물인 Toy Project입니다.  
+**Uniprocessor Garbage Collection Techniques** 논문을 참고하였습니다.
 
 ## 2. 개발 배경  
 **CS 기초 탐구:** C언어 기반의 프로세스 메모리 구조(Stack, Heap 등) 연구를 통해 수동 관리의 한계를 체감하고, 자동 메모리 관리(GC)의 필요성을 학습했습니다.  
@@ -33,6 +33,10 @@
     * Root(Black)가 아직 방문하지 않은 Tensor_A(White)를 참조할 때, Barrier가 작동하여 Tensor_A를 Grey로 바꾸는 과정 시각화
 * **Step 4:** GC 완료 및 Garbage(White) 회수 
 ![이나연_toy_project_결과](https://github.com/user-attachments/assets/f09a1125-db1a-4897-9d92-5fe92efede59)
+
+향후 과제 
+* 실제 AI 모델의 텐서 할당 패턴을 적용하여 Efficient ML을 고려한 시뮬레이션 고도화
+* Multi-thread 환경에서의 Write Barrier 동시성 제어 로직 추가 구현
 
 **4-2. Serial_Gen_GC**
 
