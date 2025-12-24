@@ -28,7 +28,7 @@ int main() {
     
     // 강제로 GC 유발 (더미 객체 왕창 생성)
     printf("Triggering GC by force allocation...\n");
-    for (int i = 0; i < 30000; i++) {
+    for (int i = 0; i < 50000; i++) {
         Object* dummy = new_object(vm, OBJ_INT);
         pop(vm);
     }
