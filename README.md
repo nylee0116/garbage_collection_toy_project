@@ -47,15 +47,15 @@
 ├── main.c  
 ├── toy_gc.exe  
 └── Serial Generational GC 토이 프로젝트 설명.md       
-```
-### 1. 프로젝트 목표 (Objectives)
-이론으로 배운 다음 3가지의 내용을 직접 구현한다
+```  
+프로젝트 목표 (Objectives)  
+: 이론으로 배운 다음 3가지의 내용을 직접 구현한다
 
 1. "대부분의 객체는 금방 죽는다"는 가설을 전제로, 힙을 두 영역(Young/Old)으로 나누는 것
 2. GC가 실행될 때 객체의 메모리 주소가 바뀜(Copy/Compact). 이때 이 객체를 가리키고 있던 다른 객체들의 포인터를 깨지지 않고 갱신하는 것 구현
 3. `malloc`을 쓰지 않고 포인터 덧셈만으로 메모리를 할당하는 Bump Pointer Allocation 구현
 
-**Serial Generational GC 토이 프로젝트 설명.md에 자세한 내용 명시**
+***Serial Generational GC 토이 프로젝트 설명.md에 자세한 내용 명시**
 
 ---
 **4-3. WriteBarrier_Gen_GC**
